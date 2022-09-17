@@ -1,0 +1,215 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #647df9;
+}
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    margin: 50px auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/*--------- price ----------*/
+.price-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+}
+.price-erea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background:#ffd861;
+    border-radius: 50%;
+}
+.inner-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    background: #ffd861;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: relative;
+}
+.price{
+    font-size: 40px;
+    color: #fff;
+}
+.text{
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* ------- package name ---------- */
+
+.package-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2px;
+    margin: 35px 0;
+    background:#ffd861;
+    position: relative;
+}
+.name{
+    background-color: #fff;
+    padding: 0 15px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* --------- list ---------- */
+.features{
+    margin: 60px 0;
+}
+.features li{
+    margin: 10px 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.list-name{
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(82, 81, 81);
+}
+.icon{
+    font-size: 15px;
+}
+.check{
+    color: #2db94d;
+}
+.cross{
+    color: #cd3241;
+}
+
+/* --------- button ---------- */
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+button{
+    width: 80%;
+    height: 50px;
+    color: #ffd861;
+    font-size: 22px;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid #ffd861;
+    outline: none;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+button:hover{
+    background: #ffd861;
+    color: #fff;
+    border-radius: 15px;
+}
+
+/* ---------------- Color premium ----------------- */
+.card-premium .price-erea , .card-premium .inner-area{
+    background: #a26bfa;
+}
+.card-premium .package-name{
+    background: #a26bfa;
+}
+.card-premium button{
+    color: #a26bfa;
+    border: 2px solid #a26bfa;
+}
+.card-premium button:hover{
+    background: #a26bfa;
+    color: #fff;
+    border-radius: 15px;
+}
+
+/* ------------------ Color ultimate------------------- */
+.card-ultimate .price-erea , .card-ultimate .inner-area{
+    background: #43EE8E;
+}
+.card-ultimate .package-name{
+    background: #43EE8E;
+}
+.card-ultimate button{
+    color: #43EE8E;
+    border: 2px solid #43EE8E;
+}
+.card-ultimate button:hover{
+    background: #43EE8E;
+    color: #fff;
+    border-radius: 15px;
+}
+
+/* ---------------------- ribbon ------------------- */
+
+.ribbon{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    overflow: hidden;
+}
+.ribbon span{
+    position: absolute;
+    width: 200px;
+    color: #fff;
+    padding: 8px 3px ;
+    background: #a26bfa;
+    text-align: center;
+    font-size: 14px;
+    top: 30px;
+    right: 0;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.14);
+}
+
+/* ------------------------- madia ----------------------------- */
+
+@media (max-width: 991px) {
+    .price{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .name{
+        padding: 0 8px;
+        font-size: 22px;
+    }
+    .list-name{
+        font-size: 14px;
+    }
+}
